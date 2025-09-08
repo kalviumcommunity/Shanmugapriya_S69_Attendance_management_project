@@ -1,13 +1,15 @@
 public class Course {
+    private static int nextCourseIdCounter = 101;  // auto-increment counter starting at 101
     private int courseId;
     private String courseName;
 
-    public void setDetails(int courseId, String courseName) {
-        this.courseId = courseId;
+    // Constructor
+    public Course(String courseName) {
+        this.courseId = nextCourseIdCounter++;
         this.courseName = courseName;
     }
 
     public void displayDetails() {
-        System.out.println("Course ID: " + courseId + ", Course Name: " + courseName);
+        System.out.println("Course ID: C" + courseId + ", Course Name: " + courseName);
     }
 }

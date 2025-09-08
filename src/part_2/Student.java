@@ -1,9 +1,11 @@
 public class Student {
+    private static int nextStudentIdCounter = 1;  // auto-increment counter
     private int studentId;
     private String name;
 
-    public void setDetails(int studentId, String name) {
-        this.studentId = studentId;
+    // Constructor
+    public Student(String name) {
+        this.studentId = nextStudentIdCounter++;
         this.name = name;
     }
 

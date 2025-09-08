@@ -1,19 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        Student[] students = new Student[2];
-        Course[] courses = new Course[2];
+        Student[] students = new Student[4];
+        Course[] courses = new Course[3];
 
-        students[0] = new Student();
-        students[0].setDetails(1, "Alice");
+        // Create students using constructor
+        students[0] = new Student("Alice");
+        students[1] = new Student("Bob");
+        students[2] = new Student("Charlie");
+        students[3] = new Student("Diana");
 
-        students[1] = new Student();
-        students[1].setDetails(2, "Bob");
-
-        courses[0] = new Course();
-        courses[0].setDetails(101, "Mathematics");
-
-        courses[1] = new Course();
-        courses[1].setDetails(102, "Computer Science");
+        // Create courses using constructor
+        courses[0] = new Course("Mathematics");
+        courses[1] = new Course("Computer Science");
+        courses[2] = new Course("Physics");
 
         System.out.println("=== Students ===");
         for (Student student : students) {
