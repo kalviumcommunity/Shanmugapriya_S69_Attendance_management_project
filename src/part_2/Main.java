@@ -18,7 +18,7 @@ public class Main {
         for (Student student : students) {
             student.displayDetails();
         }
-
+  // Display course details
         System.out.println("\n=== Courses ===");
         for (Course course : courses) {
             course.displayDetails();

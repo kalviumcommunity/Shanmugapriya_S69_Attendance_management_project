@@ -8,7 +8,7 @@ public class Course {
         this.courseId = nextCourseIdCounter++;
         this.courseName = courseName;
     }
-
+  // Method to display course details
     public void displayDetails() {
         System.out.println("Course ID: C" + courseId + ", Course Name: " + courseName);
     }

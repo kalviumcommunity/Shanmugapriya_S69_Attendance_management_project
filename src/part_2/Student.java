@@ -8,7 +8,7 @@ public class Student {
         this.studentId = nextStudentIdCounter++;
         this.name = name;
     }
-
+   // Method to display student details
     public void displayDetails() {
         System.out.println("Student ID: " + studentId + ", Name: " + name);
     }
