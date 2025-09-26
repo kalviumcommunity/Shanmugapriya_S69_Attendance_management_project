@@ -13,7 +13,7 @@ public class Main {
         System.out.println(staff);
         System.out.println();
 
-        AttendanceRecord record = new AttendanceRecord(student.getId(), "2025-09-24", true);
+        AttendanceRecord record = new AttendanceRecord(student.getId(), java.time.LocalDate.of(2025, 9, 24), true);
         record.displayRecord();
     }
 }
