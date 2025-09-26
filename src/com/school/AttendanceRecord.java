@@ -1,35 +1,21 @@
+package com.school;
+
 public class AttendanceRecord {
     private int studentId;
-    private int courseId;
-    private String status;
+    private String date;
+    private boolean present;
 
-    public AttendanceRecord(int studentId, int courseId, String status) {
+    public AttendanceRecord(int studentId, String date, boolean present) {
         this.studentId = studentId;
-        this.courseId = courseId;
-
-        if (status.equalsIgnoreCase("Present") || status.equalsIgnoreCase("Absent")) {
-            this.status = status;
-        } else {
-            this.status = "Invalid";
-            System.out.println("⚠ Warning: Invalid status provided. Must be 'Present' or 'Absent'.");
-        }
+        this.date = date;
+        this.present = present;
     }
 
-    // Getters
-    public int getStudentId() {
-        return studentId;
-    }
+    public int getStudentId() { return studentId; }
+    public String getDate() { return date; }
+    public boolean isPresent() { return present; }
 
-    public int getCourseId() {
-        return courseId;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    // Display method
     public void displayRecord() {
-        System.out.println("Student ID: " + studentId + ", Course ID: " + courseId + ", Status: " + status);
+        System.out.println("Attendance Record -> Student ID: " + studentId + ", Date: " + date + ", Present: " + present);
     }
 }
