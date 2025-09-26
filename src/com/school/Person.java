@@ -2,8 +2,8 @@ package com.school;
 
 public class Person {
     private static final java.util.concurrent.atomic.AtomicInteger nextIdCounter = new java.util.concurrent.atomic.AtomicInteger(1);
-    protected int id;
-    protected String name;
+    private final int id;
+    private final String name;
 
     public Person(String name) {
         this.id = nextIdCounter.getAndIncrement();
