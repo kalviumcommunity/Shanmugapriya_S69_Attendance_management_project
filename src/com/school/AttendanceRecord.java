@@ -2,7 +2,7 @@ package com.school;
 
 public class AttendanceRecord {
     private int studentId;
-    private String date;
+    private java.time.LocalDate date;
     private boolean present;
 
     public AttendanceRecord(int studentId, String date, boolean present) {
