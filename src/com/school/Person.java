@@ -6,7 +6,7 @@ public class Person {
     protected String name;
 
     public Person(String name) {
-        this.id = nextIdCounter++;
+        this.id = nextIdCounter.getAndIncrement();
         this.name = name;
     }
 
