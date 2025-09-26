@@ -1,7 +1,7 @@
 package com.school;
 
 public class Person {
-    private static int nextIdCounter = 1;
+    private static final java.util.concurrent.atomic.AtomicInteger nextIdCounter = new java.util.concurrent.atomic.AtomicInteger(1);
     protected int id;
     protected String name;
 
